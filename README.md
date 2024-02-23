@@ -1,3 +1,22 @@
+# In Summary
+
+This short introduction aims to show the installation and the setup process for CellxGene and Explore CellxGene. 
+
+It shows how to transform a Seurat object into an .h5ad file as well as the installation instructions for the 2 programs.
+
+# Transform Seurat to .h5ad
+
+Using the SeuratDisk package in R.
+
+```r
+library(Seurat)
+library(SeuratDisk)
+
+SaveH5Seurat(so, filename = "so.h5Seurat")
+Convert("so.h5Seurat", dest = "h5ad")
+```
+The resulting .h5ad file is compatible with CellxGene and all of its extensions.
+
 # CellxGene
 
 Installation instructions are from the [CellxGene Website](https://cellxgene.cziscience.com/docs/05__Annotate%20and%20Analyze%20Your%20Data/5_1__Getting%20Started:%20Install,%20Launch,%20Quick%20Start).
